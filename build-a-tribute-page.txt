@@ -1,0 +1,54 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en"/>
+    <head>
+      <link rel="stylesheet" href="styles.css">
+      </head>
+      <body>
+        <main id="main">
+          <h1 id="title">Gandalf</h1>
+          <h2>"All we have to decide is what to do with the time that is given us."</h2>
+          <div id="img-div">
+            <figure>
+            <img src="https://static.wikia.nocookie.net/lotr/images/e/e7/Gandalf_the_Grey.jpg" id="image" alt="Picture of Gandalf" />
+            <figcaption id="img-caption">Gandalf <small>(source: Wikipedia)</small></figcaption>
+            </figure>
+            </div>
+            <div>
+            <section id="tribute-info">
+              <h3>Gandalf</h3>
+              <p>Gandalf, known largely as the Grey and later, briefly, the White, and originally named Olórin (Quenya), was an Istar (Wizard), dispatched to Middle-earth in the Third Age to combat the threat of Sauron. He joined Thorin II and his company to reclaim the Lonely Mountain from Smaug, helped form the Fellowship of the Ring to destroy the One Ring, and led the Free Peoples of the World in the final campaign of the War of the Ring.</p>
+              <p><small>Source: Wikipedia</small></p>
+              </section>
+              <h3>If you want to know more about Gandalf, check out his <a id="tribute-link" href="https://lotr.fandom.com/wiki/Gandalf" target="_blank">Wiki entry</a>.</h3>
+            </div>
+          </main>
+       </body>
+  </html>
+
+** end of index.html **
+
+** start of styles.css **
+
+#image 
+{
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  border-radius: 5%;
+}
+
+* {
+  font-family: Sans-serif; 
+}
+
+#img-caption {
+  text-align: center;
+}
+
+** end of styles.css **
+

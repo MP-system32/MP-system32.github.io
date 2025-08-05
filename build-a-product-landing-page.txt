@@ -1,0 +1,200 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    </head>
+    <body>
+      <header id="header" class="header">
+        <img id="header-img" class="header-img" src="https://kaleideum.org/wp-content/uploads/2020/03/plasma-globe-long-exposure-preview.jpg" />
+        <nav id="nav-bar" class="nav-bar">
+          <a href="#main-page" id="nav-link" class="nav-link">
+            Our product
+          </a>
+          <a href="#how-it-works" id="nav-link" class="nav-link">
+              How it works
+          </a>
+          <a href="#form" id="nav-link" class="nav-link">
+              Pricing
+          </a>
+        </nav>
+        </header>
+
+        <div class="main-page" id="main-page">
+          <div class="product">
+            <div class="image-column">
+              <img src="https://static.wixstatic.com/media/a4762e_8e4c94c88ede4ec68da940463f057d09~mv2.jpg/v1/fill/w_568,h_624,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/a4762e_8e4c94c88ede4ec68da940463f057d09~mv2.jpg" class="our-product" id="our-product">
+            </div>
+            <div class="text-column">
+          <p>Classic Model</p>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="image-column">
+              <img src="https://wonders.physics.wisc.edu/wp-content/uploads/sites/219/2017/05/Plasma_2.jpg" class="our-product" id="our-product">
+            </div>
+            <div class="text-column">
+              <p>Plasma Disc</p>
+            </div>
+          </div>
+
+          <div class="product">
+          <div class="image-column">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGpi19o2YXcAPD4XhejB4CH_Kt361Ww1xFNg&s" class="our-product" id="our-product">
+          </div>
+          <div class="text-column">
+          <p>Wall Lamp</p>
+          </div>
+          </div>
+        </div>
+
+        <div class="how-it-works" id="how-it-works">
+          <p>How it Works</p>
+            <div>
+              <video id="video" class="video" src="https://www.youtube.com/watch?v=-bfWAxkZw8E">
+              </video>
+          </div>
+        </div>
+
+        <form id="form" class="form" action="https://www.freecodecamp.com/email-submit">
+          <input id="email" class="email" type="email" placeholder="Consult our pricing" required name="email">
+          </input>
+          <input id="submit" class="submit" type="submit" action="https://www.freecodecamp.com/email-submit"></input>
+        </form>
+      </body>
+        <footer><p><small>Credits and source: scienceofgadgets, The Wonders of Physics, more2science</small></p></footer>
+  </html>
+
+** end of index.html **
+
+** start of styles.css **
+
+*, ::before,
+::after {
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.15rem;
+    background: beige;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: beige;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.header-img {
+    display: flex;
+  align-items: center;
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.nav-bar {
+    display: flex;
+    position: right;
+    gap: 30px;
+}
+
+.nav-link {
+    text-decoration: none;
+}
+
+.main-page {
+    margin: 150px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-direction: row;
+  max-width: 800px;
+  width: 100%;
+}
+
+.image-column {
+  flex: 0 1 40%;
+}
+
+.text-column {
+  flex: 0 1 60%;
+}
+
+img.our-product{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+    display: block;
+}
+
+.how-it-works {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#submit {
+    border-radius: 15%;
+    padding: 1%;
+}
+
+small {
+    font-size: 0.75rem;
+}
+
+@media (max-width: 768px) {
+    * {
+        flex-direction: row;
+        padding: 0.5rem;
+        gap: 5%;
+        margin: auto;
+    }
+   }
+
+@media (max-width: 480px) {
+    * {
+        flex-direction: row;
+        gap: 5%;
+        padding: 0.25rem;
+        margin: auto;
+    }
+}
+
+** end of styles.css **
+
