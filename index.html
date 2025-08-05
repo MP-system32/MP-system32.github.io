@@ -1,0 +1,72 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta title="My Portfolio">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <section id="navbar">
+      step 6
+      <a href="#projects">step 7</a>
+    </section>
+    <section id="welcome-section">
+      <h1>step 2</h1>
+    </section>
+    <section id="projects">
+      <div class="project-tile">step 4</div>
+      <a href="">step 5</a>
+    </section>
+    <section class="profile-link">
+      <a href="https://www.freecodecamp.org/MP_system32" target="_blank" id="profile-link">
+      View my FreeCodeCamp profile
+      </a>
+    </section>
+  </body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+/* Dark mode preference */
+@media (prefers-color-scheme: dark) {
+  body { background: #222; color: #eee; }
+}
+
+/* Light mode preference */
+@media (prefers-color-scheme: light) {
+  body { background: #fff; color: #333; }
+}
+
+/* Disable animations for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
+
+/* Base (mobile) styles */
+body { font-size: 14px; }
+
+/* Larger screens */
+@media (min-width: 768px) {
+  body { font-size: 16px; }
+}
+
+.navbar { padding: 1rem; }
+
+/* Hide menu on small screens */
+@media (max-width: 767px) {
+  .menu { display: none; }
+}
+
+/* Show menu on tablets/desktops */
+@media (min-width: 768px) {
+  .menu { display: flex; }
+}
+
+
+
+** end of styles.css **
+
