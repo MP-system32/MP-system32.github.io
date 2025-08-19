@@ -5,6 +5,7 @@
   --dark-text: #8892b0;
   --bg-color: #0a192f;
   --card-bg: #112240;
+  --profile-separator: #aaa;
 }
 
 * {
@@ -155,6 +156,11 @@ p {
   transform: translateY(-5px);
 }
 
+#projects-link {
+  text-decoration: none;
+  color: var(--light-text);
+}
+
 .view-all {
   display: inline-block;
   color: var(--primary-color);
@@ -172,6 +178,13 @@ p {
 .profile-link a {
   color: var(--primary-color);
   text-decoration: none;
+}
+
+.profile-link a:not(:last-child)::after {
+  content: "|";
+  color: var(--profile-separator);
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
 @media (max-width: 768px) {

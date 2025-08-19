@@ -1,0 +1,91 @@
+* {
+  position: relative;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #fdfdfd;
+  color: #333;
+  margin: 0;
+}
+
+.sideNavBar {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  overflow-x: hidden;
+  width: 200px;
+  height: 100%;
+  background-color: #111;
+  padding-top: 15px;
+  color: #fff;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+}
+
+.sideNavBar header {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 0 0 20px 10px;
+}
+
+a.nav-link {
+  padding: 8px 12px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #bbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+a.nav-link:hover {
+  color: #fff;
+  background: #333;
+}
+
+main {
+  margin-left: 200px;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+section header {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin: 20px 0 10px 10px;
+}
+
+code {
+  display: block;
+  background: #272822;
+  color: #f8f8f2;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-family: "Source Code Pro", monospace;
+}
+
+@media screen and (max-width: 768px) {
+  .sideNavBar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  main {
+    margin-left: 0;
+  }
+  .sideNavBar header {
+    margin: 0;
+  }
+}
